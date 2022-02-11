@@ -3,7 +3,15 @@ module.exports = {
     './index.html',
     './main.js',
   ],
+
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+
+    },
     fontFamily: {
       'Pacifico': ['Pacifico', 'cursive'],
       'Marker': ['Permanent Marker', 'cursive'],
@@ -11,10 +19,14 @@ module.exports = {
       'Roboto': ['Roboto Slab', 'serif'],
 
     },
-    extend: {},
+    extend: {
+      colors: {
+        'bg-manga': '#F59E0B',
+        'bg-shoes': '#00afb9'
+      }
+    },
   },
   plugins: [],
 }
 
-// font - family: 'Kaushan Script', 'cursive';
-// font - family: 'Roboto Slab', 'serif';
+
