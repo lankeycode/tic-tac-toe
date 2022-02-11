@@ -1,0 +1,54 @@
+.square{
+    width:150px;
+    height:150px;
+    background: #454545;
+    border: 3px solid #999;
+    
+}
+.one{
+    left:20%;
+    
+}
+.two{
+    right:20%;
+}
+.one,
+.two{
+    top : 20vh;
+    font-family:'Kaushan Script';
+    font-size: 1.5rem;
+}
+.bigImg{
+    height:  55vh;
+    width: 25vw;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.containerImgOne{
+    left:3%
+
+}
+
+.containerImgTwo{
+    right:3%;
+
+}
+.containerImgOne,
+.containerImgTwo{
+    top:25vh;
+}
+
+.square:hover{
+    background:pink;
+   
+    
+}
+.smallImg{
+    width:100px;
+    height:100px;
+    left:50%;
+    position:relative;
+    /* top:42vh; */
+    z-index: 5;
+    transform:translateX(-50%)
+}

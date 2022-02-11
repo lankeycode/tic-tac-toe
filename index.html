@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe </title>
 </head>
-<body>
+<body class="bg-amber-500 overflow-hidden">
+    <h1 class="text-amber-900 text-7xl">TIC TAC TOE</h1>
+<!-- Joueur 1 -->
+    <div class="player one absolute ">Joueur 1</div>
+    <div class="containerImgOne absolute">
+        <img class="bigImg" src="./img/nike.png" alt="" srcset="">
+    </div>
+<!-- Fin Joueur 1 -->
+
+<!-- Joueur 2 -->
+    <div class="player two absolute  ">Joueur 2</div>
+    <div class="containerImgTwo absolute ">
+        <img class="bigImg" src="./img/adidas.png"  alt="" srcset="">
+    </div>
+<!-- Fin Joueur 2 -->
     
+<!-- Grille -->
+    <div class="grid grid-cols-3 gap-2 absolute top-40 left-1/2 -translate-x-1/2">
+        <div class="square 1 rounded-lg" >1
+            <img class="smallImg " src="./img/nike-logo.png" alt="">
+        </div>
+        <div class="square 2 rounded-lg" >2
+            <img class="smallImg" src="./img/cartoon-man.png" alt="">
+        </div>
+        <div class="square 3 rounded-lg" >3
+            <img class="smallImg" src="./img/cartoon-woman.png" alt="">
+        </div>
+        <div class="square 4 rounded-lg" >4
+            <img class="smallImg" src="./img/adidas-logo1.png" alt="">
+        </div>
+        <div class="square 5 rounded-lg" >5
+            <img class="smallImg" src="./img/naruto-logo.png" alt="">
+        </div>
+        <div class="square 6 rounded-lg" >6
+            <img class="smallImg" src="./img/naruto-logo.png" alt="">
+        </div>
+        <div class="square 7 rounded-lg" >7
+            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+        </div>
+        <div class="square 8 rounded-lg" >8
+            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+        </div>
+        <div class="square 9 rounded-lg" >9
+            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+        </div>
+<!-- Fin grille -->
+
+<!-- Bouton reset -->
+    </div>
+    <button class="h-7 w-20 absolute bottom-10 left-1/2 -translate-x-1/2 bg-red-900 border-2 border-slate-600 rounded-lg">Reset</button>
+<!-- Fin bouton reset -->
+    <script src="./main.js"></script>
 </body>
 </html>
