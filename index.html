@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
     <title>Tic Tac Toe </title>
 </head>
 <body class=" bg-amber-500 overflow-hidden">
@@ -19,7 +23,7 @@
     </nav>
     <h1  class=" relative text-amber-900 text-3xl  font-Roboto">TIC TAC TOE</h1>
 <!-- Joueur 1 -->
-    <div class="player player1 one absolute text-amber-900  ">Joueur 1</div><div class="circle1"></div>
+    <div class="player player1 one absolute text-amber-900   ">Joueur 1</div><div class="circle1 "></div>
     <div class="containerImgOne absolute">
         <img class="bigImg" src="./img/naruto.png" alt="" srcset="">
     </div>
@@ -35,45 +39,50 @@
 <!-- Grille -->
     <div role="grid" class="grid grid-cols-3 gap-2 absolute top-40 left-1/2 -translate-x-1/2">
         <div class="square n1 rounded-lg" >1
-            <img class="smallImg " src="./img/one-piece-logo.png" alt="">
-            <img class="smallImg " src="./img/naruto-logo.png" alt="">
+            <!-- <img class="" src="./img/naruto-logo.png" style="height: 120px;" alt="personnage naruto"> -->
+          
         </div>
         <div class="square n2 rounded-lg" >2
-            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+            
         </div>
         <div class="square n3 rounded-lg" >3
-            <img class="smallImg"  src="./img/naruto-logo.png" alt="">
+            
+            
         </div>
         <div class="square n4 rounded-lg" >4
-            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+            
         </div>
         <div class="square n5 rounded-lg" >5
-            <img class="smallImg" src="./img/naruto-logo.png" alt="">
+            
         </div>
         <div class="square n6 rounded-lg" >6
-            <img class="smallImg" src="./img/naruto-logo.png" alt="">
+           
         </div>
         <div class="square n7 rounded-lg" >7
-            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+            
         </div>
         <div class="square n8 rounded-lg" >8
-            <img class="smallImg" src="./img/naruto-logo.png" alt="">
+            
         </div>
         <div class="square n9 rounded-lg" >9
-            <img class="smallImg" src="./img/one-piece-logo.png" alt="">
+            
         </div>
+        
     </div>
-    <div class="win font-Kaushan">WINNER</div>
-    <div class="lose font-Kaushan">LOSER</div>
+    <div class="playerLeft font-Kaushan"></div>
+    <div class="playerRight font-Kaushan"></div>
 <!-- Fin grille -->
 
 <!-- Bouton start -->
-     <button role="button" class=" start h-7 w-20 absolute   left-1/2 -translate-x-1/2 bg-red-900 border-2 outline-none outline-offset-0  rounded-lg">Start</button>
+     <button role="button" class=" start h-10 w-28 absolute   left-1/2 -translate-x-1/2 bg-red-900 border-2 outline-none outline-offset-0  rounded-lg">Start</button>
 <!-- Fin start -->
 
 <!-- Bouton reset -->
-    <button role="button" class=" reset h-7 w-20 absolute bottom-10 left-1/2 -translate-x-1/2 bg-red-900 border-2 outline-none outline-offset-0  rounded-lg">Reset</button>
+    <button role="button" class=" reset h-10 w-28 absolute bottom-10 left-1/2 -translate-x-1/2 bg-red-900 border-2 outline-none outline-offset-0  rounded-lg">Reset</button>
 <!-- Fin bouton reset -->
+<!--  Cursor -->
+    <div class="mouse"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

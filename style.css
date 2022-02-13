@@ -1,12 +1,25 @@
-/* body{
-    background: #00afb9;
-} */
+
 .nav{
     background: gray;
     width:100%;
     height:5vh;
     
 }
+.n11{
+visibility:hidden;
+}
+
+.n12{
+visibility:hidden;
+}
+.mouse{
+height: 40px;
+width:40px;
+border-radius:50%;
+position:absolute;
+background:transparent;
+}
+
 h1{
 font-size: 3rem;
 margin-left: 50%;
@@ -16,15 +29,13 @@ font-family:'Kaushan Script'
 .square{
     width:150px;
     height:150px;
-    background: #454545;
+    background: #000;
     border: 3px solid #999;
-    
+    cursor: pointer;
+    position:relative;
+       
 }
-.n1,
-.n4,
-.n7{
-    background : #000;
-}
+
 .one{
     left:13%;
        
@@ -46,7 +57,7 @@ font-family:'Kaushan Script'
    width:30px;
    height:30px;
    border-radius: 50%;
-   background:#78350F
+   background:#78350F;
    visibility:hidden;
     
 }
@@ -102,7 +113,18 @@ font-family:'Kaushan Script'
     z-index: 5;
     visibility:hidden;
     
- } 
+ }
+ .n11,
+ .n12{
+    width:120px;
+    height:130px;
+    position:absolute;
+    transform:translateX(25%);
+    /* top:42vh; */
+    z-index: 5;
+    visibility:visible;
+    
+ }
  .smallImgAdd{
     width:100px;
     height:100px;
@@ -115,6 +137,15 @@ font-family:'Kaushan Script'
 
  .active{
  visibility: visible;
+ }
+ .active2{
+ visibility:hidden;
+ }
+ .active3{
+     cursor : pointer;
+ }
+ .noHover{
+ 
  }
  
 /* button{
@@ -135,17 +166,17 @@ font-family:'Kaushan Script'
 
 }
 
-.win,
-.lose{
+.playerLeft,
+.playerRight{
     font-family:'Kaushan Script';
     font-size: 2rem;
     position:absolute;
     top: 85vh
 }
-.lose{
+.playerLeft{
     left:10%
 }
 
-.win{
+.playerRight{
     right: 10%
 }
