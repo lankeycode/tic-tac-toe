@@ -2,29 +2,24 @@
 .nav{
     background: gray;
     width:100%;
-    height:5vh;
-    
-}
-.n11{
-visibility:hidden;
+    height:5vh;   
 }
 
-.n12{
-visibility:hidden;
-}
-.mouse{
-height: 40px;
-width:40px;
-border-radius:50%;
-position:absolute;
-background:transparent;
-}
 
 h1{
 font-size: 3rem;
 margin-left: 50%;
 transform:translateX(-20%);
 font-family:'Kaushan Script'
+}
+
+#start,
+#reset{
+    background-color : #F9B332;
+    border:2px solid #000;
+    width: 100px;
+    height:30px;
+    border-radius: 15px;
 }
 .square{
     width:150px;
@@ -49,7 +44,7 @@ font-family:'Kaushan Script'
     top : 17vh;
     font-family:'Kaushan Script';
     padding:0 10px;
-    font-size:1.7rem;
+    font-size:2.5rem;
 }
 .circle1,
 .circle2{
@@ -57,7 +52,7 @@ font-family:'Kaushan Script'
    width:30px;
    height:30px;
    border-radius: 50%;
-   background:#78350F;
+   background:#000;
    visibility:hidden;
     
 }
@@ -92,15 +87,15 @@ font-family:'Kaushan Script'
     border-radius: 5px; 
     font-weight:bolder;
     font-size: 2.7rem;
-    border-bottom : 2px solid #78350F;
+    border-bottom : 2px solid #000;
     visibility: visible;
 }
 .activeCircle{
    visibility:visible
 }
 
-.square:hover{
-    background:pink;
+/* .square:hover{
+    background:pink; */
    
     
 }
@@ -114,17 +109,7 @@ font-family:'Kaushan Script'
     visibility:hidden;
     
  }
- .n11,
- .n12{
-    width:120px;
-    height:130px;
-    position:absolute;
-    transform:translateX(25%);
-    /* top:42vh; */
-    z-index: 5;
-    visibility:visible;
-    
- }
+ 
  .smallImgAdd{
     width:100px;
     height:100px;
@@ -152,19 +137,7 @@ font-family:'Kaushan Script'
     width: 70px
 }  */
 
-.manga{
-    background:#F59E0B;
 
-
-}
-
-.shoes{
-
-}
-
-.cartoon{
-
-}
 
 .playerLeft,
 .playerRight{
@@ -179,4 +152,47 @@ font-family:'Kaushan Script'
 
 .playerRight{
     right: 10%
+}
+.scoreLeft,
+.scoreRight{
+    font-family:'Kaushan Script';
+    font-size: 2rem;
+    position:absolute;
+    top: 80vh
+}
+.scoreLeft{
+    left:12%
+}
+
+.scoreRight{
+    right:11%
+}
+.manga{
+    background:#F59E0B;
+
+
+}
+
+.shoes{
+
+}
+
+.cartoon{
+
+}
+.animate{
+    animation: slide-in-top 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+            transform: scale(-1.3);
+            transform:rotateY(-500px);
+    opacity: 0;
+  }
+  100% {
+            transform: scale(1);
+            transform:rotateY(0);
+    opacity: 1;
+  }
 }
