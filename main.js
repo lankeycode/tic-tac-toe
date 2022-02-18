@@ -22,6 +22,7 @@ let n9 = document.querySelector('.n9')
 let playerActive = ''
 let playerLeft = document.querySelector('.playerLeft')
 let playerRight = document.querySelector('.playerRight')
+let changeImage = 'Naruto'
 
 
 // what is the player start
@@ -62,7 +63,7 @@ function winner() {
     // alors le joueur actif gagne
     
     if ($(" div button:first-child img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(2) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(3) img:first-child" ).hasClass('imageNaruto') === true||
-          $(" div button:nth-child(4) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(5) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(6) img:first-child" ).hasClass('imageNaruto') === true||
+          $(" div button:nth-child(4) img:first-child" ).hasClass('image'+ changeImage) === true && $(" div button:nth-child(5) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(6) img:first-child" ).hasClass('imageNaruto') === true||
           $(" div button:nth-child(7) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(8) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:last-child img:first-child" ).hasClass('imageNaruto') === true ||
           $(" div button:first-child img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(5) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:last-child img:first-child" ).hasClass('imageNaruto') === true ||
           $(" div button:nth-child(3) img:first-child" ).hasClass('imageNaruto') === true &&  $(" div button:nth-child(5) img:first-child" ).hasClass('imageNaruto') === true && $(" div button:nth-child(7) img:first-child" ).hasClass('imageNaruto') === true ||
@@ -80,7 +81,7 @@ function winner() {
      $(" div button:nth-child(7) img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(8) img:first-child" ).hasClass('imagePiece') === true && $(" div button:last-child img:first-child" ).hasClass('imagePiece') === true ||
      $(" div button:first-child img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(5) img:first-child" ).hasClass('imagePiece') === true && $(" div button:last-child img:first-child" ).hasClass('imagePiece') === true ||
      $(" div button:nth-child(3) img:first-child" ).hasClass('imagePiece') === true &&  $(" div button:nth-child(5) img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(7) img:first-child" ).hasClass('imagePiece') === true ||
-     $(" div button:first-child img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(4) img:first-child" ).hasClass('imagPieceo') === true &&  $(" div button:nth-child(7) img:first-child" ).hasClass('imagePiece') === true ||
+     $(" div button:first-child img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(4) img:first-child" ).hasClass('imagePiece') === true &&  $(" div button:nth-child(7) img:first-child" ).hasClass('imagePiece') === true ||
      $(" div button:nth-child(2) img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(5) img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(8) img:first-child" ).hasClass('imagePiece') === true ||
      $(" div button:nth-child(3) img:first-child" ).hasClass('imagePiece') === true && $(" div button:nth-child(6) img:first-child" ).hasClass('imagePiece') === true && $(" div button:last-child img:first-child" ).hasClass('imagePiece') === true ){
         playerLeft.textContent = 'LOSER'
@@ -89,7 +90,7 @@ function winner() {
         scoreRight.html( parseInt(scoreRight.html()) + 1 )
         $buttons.prop('disabled', true) //disabled all buttons
     }
-    newGame()
+
 }
 // display image of game
 $buttons.click(function ()  { 
